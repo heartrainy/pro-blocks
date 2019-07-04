@@ -1,12 +1,16 @@
-# @umi-material/TestBlock
+# @umi-blocks/ant-design-pro/resultsuccess
 
-测试 Block
+ResultSuccess
 
 ## Usage
 
 ```sh
-umi block https://github.com/umijs/umi-blocks/tree/master/TestBlock
+umi block add ant-design-pro/resultsuccess
 ```
+
+## SNAPSHOT
+
+![SNAPSHOT](./snapshot.png)
 
 ## LICENSE
 
