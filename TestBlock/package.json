@@ -1,11 +1,7 @@
 {
-  "name": "@umi-block/test-success",
+  "name": "@umi-block/TestSuccess",
   "version": "0.0.1",
   "description": "ResultSuccess",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/umijs/umi-blocks/ant-design-pro/resultsuccess"
-  },
   "license": "ISC",
   "main": "src/index.js",
   "scripts": {
