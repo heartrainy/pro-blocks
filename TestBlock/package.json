@@ -1,5 +1,5 @@
 {
-  "name": "@umi-block/test-block",
+  "name": "@umi-block/TestBlock",
   "version": "1.0.0",
   "description": "测试",
   "main": "src/index.js",
