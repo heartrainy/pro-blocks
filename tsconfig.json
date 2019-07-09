@@ -12,6 +12,7 @@
     "rootDirs": ["/src", "/test", "/mock", "./typings"],
     "forceConsistentCasingInFileNames": true,
     "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
     "suppressImplicitAnyIndexErrors": true,
     "noUnusedLocals": true,
     "allowJs": true,
