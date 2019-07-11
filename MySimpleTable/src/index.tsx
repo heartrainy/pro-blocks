@@ -40,7 +40,7 @@ const getValue = (obj: { [x: string]: string[] }) =>
 interface TableListProps extends FormComponentProps {
   dispatch: Dispatch<any>;
   loading: boolean;
-  tableList: StateType;
+  BLOCK_NAME_CAMEL_CASE: StateType;
 }
 
 interface TableListState {
@@ -63,18 +63,18 @@ const OptionStatus: any[] = [
 /* eslint react/no-multi-comp:0 */
 @connect(
   ({
-    tableList,
+    BLOCK_NAME_CAMEL_CASE,
     loading,
   }: {
-    tableList: StateType;
+    BLOCK_NAME_CAMEL_CASE: StateType;
     loading: {
       models: {
         [key: string]: boolean;
       };
     };
   }) => ({
-    tableList,
-    loading: loading.models.tableList,
+    BLOCK_NAME_CAMEL_CASE,
+    loading: loading.models.BLOCK_NAME_CAMEL_CASE,
   }),
 )
 class TableList extends Component<TableListProps, TableListState> {
@@ -128,7 +128,7 @@ class TableList extends Component<TableListProps, TableListState> {
   componentDidMount() {
     const { dispatch } = this.props;
     dispatch({
-      type: 'tableList/fetch',
+      type: 'BLOCK_NAME_CAMEL_CASE/fetch',
     });
   }
 
@@ -157,7 +157,7 @@ class TableList extends Component<TableListProps, TableListState> {
     }
 
     dispatch({
-      type: 'tableList/fetch',
+      type: 'BLOCK_NAME_CAMEL_CASE/fetch',
       payload: params,
     });
   };
@@ -169,7 +169,7 @@ class TableList extends Component<TableListProps, TableListState> {
       formValues: {},
     });
     dispatch({
-      type: 'tableList/fetch',
+      type: 'BLOCK_NAME_CAMEL_CASE/fetch',
       payload: {},
     });
   };
@@ -219,7 +219,7 @@ class TableList extends Component<TableListProps, TableListState> {
       });
 
       dispatch({
-        type: 'tableList/fetch',
+        type: 'BLOCK_NAME_CAMEL_CASE/fetch',
         payload: values,
       });
     });
@@ -242,7 +242,7 @@ class TableList extends Component<TableListProps, TableListState> {
     const { dispatch } = this.props;
 
     dispatch({
-      type: 'tableList/add',
+      type: 'BLOCK_NAME_CAMEL_CASE/add',
       payload: {
         ...fields
       },
@@ -254,7 +254,7 @@ class TableList extends Component<TableListProps, TableListState> {
   handleUpdate = (fields: Partial<TableListItem>) => {
     const { dispatch } = this.props;
     dispatch({
-      type: 'tableList/update',
+      type: 'BLOCK_NAME_CAMEL_CASE/update',
       payload: {
         ...fields
       },
@@ -273,7 +273,7 @@ class TableList extends Component<TableListProps, TableListState> {
       cancelText: '取消',
       onOk() {
         _this.props.dispatch({
-          type: 'tableList/remove',
+          type: 'BLOCK_NAME_CAMEL_CASE/remove',
           payload: {
             key: keys,
           },
@@ -406,7 +406,7 @@ class TableList extends Component<TableListProps, TableListState> {
 
   render() {
     const {
-      tableList: { data },
+      BLOCK_NAME_CAMEL_CASE: { data },
       loading
     } = this.props;
 

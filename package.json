@@ -1,7 +1,7 @@
 {
   "private": true,
   "scripts": {
-    "dev": "cross-env PAGES_PATH='TestBlock/src' umi dev",
+    "dev": "cross-env PAGES_PATH='MySimpleTable/src' umi dev",
     "format-imports": "import-sort --write '**/*.{js,jsx,ts,tsx}'",
     "lint": "npm run lint:js && npm run lint:style",
     "lint-staged": "lint-staged",
